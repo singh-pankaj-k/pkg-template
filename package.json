@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": false,
   "description": "Template for npm packages",
+  "license": "ISC",
   "author": "PK Singh",
   "repository": {
     "type": "git",
@@ -29,7 +30,7 @@
     "build": "npm run build:esm && npm run build:cjs",
     "build:esm": "tsc -p tsconfig.esm.json",
     "build:cjs": "tsc -p tsconfig.cjs.json && node ./scripts/rename-cjs.js",
-    "test": "jest --coverage",
+    "test": "NODE_NO_WARNINGS=1 jest --coverage",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "lint": "eslint",
