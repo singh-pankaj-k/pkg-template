@@ -2,6 +2,12 @@
   "name": "pkg-template",
   "version": "1.0.0",
   "private": false,
+  "description": "Template for npm packages",
+  "author": "PK Singh",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/singh-pankaj-k/pkg-template.git"
+  },
   "type": "module",
   "publishConfig": {
     "access": "public"
@@ -26,7 +32,8 @@
     "test": "jest --coverage",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "lint": "eslint"
+    "lint": "eslint",
+    "prepare": "husky"
   },
   "devDependencies": {
     "@types/jest": "30.0.0",
